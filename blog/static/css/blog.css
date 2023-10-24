@@ -1,0 +1,122 @@
+/* Reset some default styles for better consistency */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General styles */
+body {
+  font-family: 'Helvetica', sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #00abff;
+  text-decoration: none;
+}
+
+h1 {
+  font-weight: bold;
+  border-bottom: 2px solid #00abff;
+  padding: 20px 0 10px 0;
+  color: #333;
+}
+
+h2 {
+  font-weight: bold;
+  margin: 20px 0 10px;
+  color: #444;
+}
+
+/* Content and Sidebar layout */
+#content {
+  width: 70%;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  margin: 20px auto;
+}
+
+#sidebar {
+  width: 25%;
+  padding: 20px;
+  background: #efefef;
+  height: 100%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  margin: 20px auto;
+}
+
+/* Date styles */
+p.date {
+  color: #888;
+  font-size: 12px;
+  font-style: italic;
+  font-family: 'Georgia', serif;
+}
+
+/* Pagination styles */
+.pagination {
+  margin: 20px 0;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Form styles */
+label {
+  color: #333;
+  margin-bottom: 8px;
+  display: block;
+}
+
+input,
+textarea {
+  margin: 0 0 10px;
+  background: #ededed;
+  border: 1px solid #ccc;
+  padding: 10px;
+  font-size: 14px;
+  width: 100%;
+  border-radius: 5px;
+}
+
+input[type=submit] {
+  font-weight: bold;
+  background: #00abff;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+}
+
+/* Error message styles */
+.errorlist {
+  color: #cc0033;
+  padding-left: 10px;
+  margin-bottom: 10px;
+}
+
+/* Comments */
+.comment {
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  margin: 20px 0;
+}
+
+.comment:nth-child(even) {
+  background: #f5f5f5;
+}
+
+.comment .info {
+  font-weight: bold;
+  font-size: 14px;
+  color: #333;
+}
