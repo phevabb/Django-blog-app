@@ -2,52 +2,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %}My Blog{% endblock %}</title>
-    <link rel="stylesheet" href="{% static 'css/blog.css' %}">
-    <!-- Add your custom CSS files if needed -->
-    <link rel="stylesheet" href="{% static 'css/custom.css' %}">
-    <!-- Add your favorite fonts if needed -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600">
+<title>{% block title %}{% endblock %}</title>
+<link href="{% static "css/blog.css" %}" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="container">
-                <h1><a href="{% url 'blog:post_list'  %}">My Blog</a></h1>
-                <!-- Add a navigation menu here if needed -->
-                <ul>
-                    <li><a href="{% url 'blog:post_list' %}">Home</a></li>
-                    <li><a href="{% url 'blog:post_list' %}">About</a></li>
-                    <!-- Add more menu items as required -->
-                </ul>
-            </div>
-        </nav>
-    </header>
-    <main>
-        <div class="container">
-            <div class="content">
-                {% block content %}
-                {% endblock %}
-            </div>
-            <aside class="sidebar">
-                <h2>My Blog</h2>
-                <p>This is my blog.</p>
-                <!-- Add more sidebar content if needed -->
-            </aside>
-        </div>
-    </main>
-    <footer>
-        <div class="container">
-            <p>&copy; {% now "Y" %} My Blog. All rights reserved.</p>
-            <!-- Add social media links and additional footer content if needed -->
-        </div>
-    </footer>
-
-    <!-- Include JavaScript files if needed -->
-    <script src="{% static 'js/blog.js' %}"></script>
-    <!-- Add your custom JavaScript files if needed -->
-    <script src="{% static 'js/custom.js' %}"></script>
+<div id="content">
+{% block content %}
+{% endblock %}
+</div>
+<div id="sidebar">
+<h2>My blog</h2>
+<p>This is my blog.</p>
+</div>
 </body>
 </html>
